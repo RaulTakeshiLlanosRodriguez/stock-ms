@@ -98,6 +98,6 @@ public class StockControllerTest {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.productId").value(productId))
-                .andExpect(jsonPath("$.quantity").value(total));
+                .andExpect(jsonPath("$.total").value(total));
     }
 }
